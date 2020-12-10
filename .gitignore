@@ -1,0 +1,4 @@
+# Project exclude paths
+/target/
+.idea
+eu3-bookit-project.iml
