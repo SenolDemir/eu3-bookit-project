@@ -58,6 +58,7 @@ public class DBUtils {
      *         The rest of the data will be ignored
      */
     public static Object getCellValue(String query) {
+
         return getQueryResultList(query).get(0).get(0);
     }
 
@@ -220,10 +221,8 @@ public class DBUtils {
     public static int getRowCount() throws Exception {
 
         resultSet.last();
-
         int rowCount = resultSet.getRow();
         return rowCount;
-
     }
 
 }
